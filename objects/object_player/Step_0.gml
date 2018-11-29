@@ -21,4 +21,18 @@ if ((l72CC2CAA_0 > 0))
 	/// @DnDParent : 72CC2CAA
 	/// @DnDArgument : "force" "0"
 	gravity = 0;
+
+	/// @DnDAction : YoYo Games.Common.Execute_Code
+	/// @DnDVersion : 1
+	/// @DnDHash : 777C970D
+	/// @DnDParent : 72CC2CAA
+	/// @DnDArgument : "code" "if (vspeed>0)$(13_10){$(13_10)object_set_sprite(object_player, sprite_player_jump)$(13_10)}$(13_10)else$(13_10){$(13_10)object_set_sprite(object_player, sprite_player_stand)$(13_10)}"
+	if (vspeed>0)
+	{
+	object_set_sprite(object_player, sprite_player_jump)
+	}
+	else
+	{
+	object_set_sprite(object_player, sprite_player_stand)
+	}
 }
