@@ -6,23 +6,14 @@
 /// @DnDArgument : "value" "other.y"
 if(y + 10 < other.y)
 {
-	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+	/// @DnDAction : YoYo Games.Instances.Change_Instance
 	/// @DnDVersion : 1
-	/// @DnDHash : 54413E43
+	/// @DnDHash : 34D2A0F9
 	/// @DnDApplyTo : other
 	/// @DnDParent : 5FCB097F
-	with(other) instance_destroy();
-
-	/// @DnDAction : YoYo Games.Instances.Create_Instance
-	/// @DnDVersion : 1
-	/// @DnDHash : 2D10BC78
-	/// @DnDParent : 5FCB097F
-	/// @DnDArgument : "xpos_relative" "1"
-	/// @DnDArgument : "ypos" "-10"
-	/// @DnDArgument : "ypos_relative" "1"
-	/// @DnDArgument : "objectid" "object_snake_die"
-	/// @DnDSaveInfo : "objectid" "5a6abd0a-229b-4da5-8f3e-c9ef55ffda85"
-	instance_create_layer(x + 0, y + -10, "Instances", object_snake_die);
+	/// @DnDArgument : "objind" "object_snake_die"
+	/// @DnDSaveInfo : "objind" "5a6abd0a-229b-4da5-8f3e-c9ef55ffda85"
+	with(other) instance_change(object_snake_die, true);
 }
 
 /// @DnDAction : YoYo Games.Common.Else
