@@ -1,7 +1,6 @@
-/// @DnDAction : YoYo Games.Movement.Jump_To_Point
+/// @DnDAction : YoYo Games.Instance Variables.Set_Health
 /// @DnDVersion : 1
-/// @DnDHash : 2AE067A8
-/// @DnDArgument : "x" "10"
-/// @DnDArgument : "y" "600"
-x = 10;
-y = 600;
+/// @DnDHash : 5D085D71
+/// @DnDArgument : "health" "100"
+
+__dnd_health = real(100);
